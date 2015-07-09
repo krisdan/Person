@@ -1,5 +1,8 @@
 package Person;
 
+/*
+ * Interface for the PersonFactory Class 
+ */
 public interface PersonManager {
 	
 	public Person createPerson(String name);
