@@ -1,5 +1,8 @@
 package Person;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
 	public Main() {
@@ -7,10 +10,12 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		Person dave = new Person("David");
-		
-		System.out.println(dave.name);
 
+		List<Person> people = new ArrayList<Person>();
+		
+		Person bob = new Person("Bob");
+		
+		System.out.println(bob.toString());
 	}
 
 }
