@@ -34,7 +34,7 @@ public class Main {
 		String newLine = System.getProperty("line.separator");
 
 		/*
-		 * Output The Title of the excersise.
+		 * Output The Title of the exercise.
 		 */
 		System.out.println(exerciseTitle);
 		
