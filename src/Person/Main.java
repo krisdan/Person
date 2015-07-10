@@ -32,16 +32,22 @@ public class Main {
 		 * Create a variable to hold a new line value.
 		 */
 		String newLine = System.getProperty("line.separator");
+		
+		
 
 		/*
 		 * Output The Title of the exercise.
 		 */
 		System.out.println(exerciseTitle);
+	
 		
 		/*
 		 * Add in a carriage return or new line.
 		 */
 		System.out.println(newLine);
+		
+		//this prints a line on screen to separate the sections
+				System.out.println("------------------------------------------------------");
 
 		/*
 		 * Declare a String and assign it a value in a primitive style.
@@ -91,6 +97,14 @@ public class Main {
 		 * Add in a carriage return or new line.
 		 */
 		System.out.println(newLine);
+		
+		//this prints a line on screen to separate the sections
+		System.out.println("------------------------------------------------------");
+		
+		/*
+		 * Add in a carriage return or new line.
+		 */
+		System.out.println(newLine);
 
 		/*
 		 * Output the value of the name attribute of the Person object person1.
@@ -133,12 +147,28 @@ public class Main {
 		 * Add in a carriage return or new line.
 		 */
 		System.out.println(newLine);
+		
+		//this prints a line on screen to separate the sections
+		System.out.println("------------------------------------------------------");
+				
+		/*
+		 * Add in a carriage return or new line.
+		 */
+		System.out.println(newLine);
 
 		/*
 		 * Output the 6th name in the lastNames Array using element key
 		 * reference.
 		 */
 		System.out.println("the 6th last name is " + lastNames[5]);
+		
+		/*
+		 * Add in a carriage return or new line.
+		 */
+		System.out.println(newLine);
+		
+		//this prints a line on screen to separate the sections
+		System.out.println("------------------------------------------------------");
 		
 		/*
 		 * Add in a carriage return or new line.
