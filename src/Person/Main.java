@@ -174,15 +174,22 @@ public class Main {
 			Random r = new Random();
 			int ranNum = r.nextInt(high - low) + low;
 
+			// the int fnamerf equals the value of ranNum.
 			int fNameRef = ranNum;
+			
+			//the string firstName equals the value of firstNames the value of which is calculated by fnameRef.
 			String firstName = firstNames[fNameRef];
 
+			// the int lNameRef is equal to 9 less than the length of the characters of the firstName.
 			int lNameRef = 9 - firstName.length();
 
+			//the string lastName equals the value of lastNames the value of which is calculated by lnameRef.
 			String lastName = lastNames[lNameRef];
 
+			//the string full name equals the value of firstName and lastName and a space between the two.
 			String fullName = firstName + " " + lastName;
 
+			//people equals the value of fullName which is specified by the value of i.
 			people[i] = new Person(fullName);
 		}
 		
