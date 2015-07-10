@@ -21,6 +21,34 @@ public class Person {
 	private void setName(String name) {
 		this.name = name;
 	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		
+		StringBuilder out = new StringBuilder();
+		
+		String newLine = System.getProperty("line.separator");
+		
+		out.append("Class: " + this.getClass().getSimpleName());
+		
+		out.append(newLine);
+		
+		out.append("Name: " + this.getName());
+		
+		out.append(newLine);
+		
+		out.append("-------------------------------------------------");
+		
+		
+		return  out.toString();
+	}
+
+	
+	
+	
 	
 
 

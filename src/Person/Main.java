@@ -235,7 +235,7 @@ public class Main {
 		 */
 		for (Person person : people) {
 
-			System.out.println("Name " + count + " : " + person.toString());
+			System.out.println(count + " : " + newLine + person);
 			count++;
 		}
 	}
