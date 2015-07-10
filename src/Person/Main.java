@@ -70,7 +70,7 @@ public class Main {
 		/*
 		 * Output the number of characters to Standard.out
 		 */
-		System.out.println("name has " + numCharacters + " characters.");
+		System.out.println("the name " + name + " has " + numCharacters + " characters.");
 
 		/*
 		 * Create a string object using the String class.
@@ -138,7 +138,12 @@ public class Main {
 		 * Output the 6th name in the lastNames Array using element key
 		 * reference.
 		 */
-		System.out.println(lastNames[5]);
+		System.out.println("the 6th last name is " + lastNames[5]);
+		
+		/*
+		 * Add in a carriage return or new line.
+		 */
+		System.out.println(newLine);
 
 		/*
 		 * Set upper and Lower limits for Random number Generation.
@@ -161,7 +166,7 @@ public class Main {
 
 		/*
 		 * This for Loop will execute the code in its body 10 times sequentially
-		 * and increase the
+		 * and increase the value of i by one each time it runs.
 		 */
 		for (i = 0; i < 10; i++) {
 
@@ -180,8 +185,17 @@ public class Main {
 
 			people[i] = new Person(fullName);
 		}
-
+		
+		
+		/*
+		 * declare an int to be used as a counter variable for the for loop and give it the value 1.
+		 */
 		int count = 1;
+		
+		/*
+		 * this for loop will run 10 times sequentially and print to screen each time the word name then the value of count then a : then 
+		 * the value of person which is the full name, each time the code in the loop is executed the value of count is increased by 1.
+		 */
 		for (Person person : people) {
 
 			System.out.println("Name " + count + " : " + person.toString());
