@@ -38,10 +38,12 @@ public class Main
 		
 		/*
 		 * Although Strings are often initialised in a similar way to
-		 * primitive values, in the background, Java instanciates a String Object.
+		 * primitive values, in the background, Java instantiates a String Object.
 		 * Objects can have messages (Methods) which make them very usable 
-		 * and useful. Here is an exmple of a String object message. String.length()
-		 * returns an integer representation of the number of characters in the string.
+		 * and useful. Here is an example of a String object message.
+		 * 
+		 * String.length() returns an integer representation of the number of
+		 * characters in the string.
 		 */
 
 		int numCharacters = name.length(); // Create an int (Primitive) variable and assign it the value returned by String.length();
@@ -52,6 +54,16 @@ public class Main
 		System.out.println("name has " + numCharacters + " characters.");
 
 		/*
+		 * Create a variable to hold a new line value.
+		 */
+		String newLine = System.getProperty("line.separator");
+		
+		/*
+		 * Add in a carriage return or new line.
+		 */
+		System.out.println(newLine);
+		
+		/*
 		 * Create a string object using the String class.
 		 */
 		String surName = new String("Smith");
@@ -59,16 +71,41 @@ public class Main
 		/*
 		 * Concatenate name and surname into one String.
 		 */
-		 String personName = name + " " + surName;
-		 
-		Person person1 = new Person(name);
+		String personName = name + " " + surName;
+		
+		/*
+		 * Create a Person Object and pass it the personName variable.
+		 */
+		Person person1 = new Person(personName);
+		
+		/*
+		 * Add in a carriage return or new line.
+		 */
+		System.out.println(newLine);
 
-		//System.out.println(person1.name);
+		/*
+		 * Output the value of the name attribute of the Person object person1.
+		 */
+		System.out.println("person1 name: " + person1.name);
 
+		/*
+		 * Like Strings Arrays are Objects but can be instantiated in shorthand that is similar to primitive type initialisation.
+		 * They like Strings can also use Class instantiation.
+		 */
+		
+		/*
+		 * Declare initialise and fill a String Array in shorthand.
+		 */
 		String[] firstNames = {"Dan","Chris","Dave","Bob","Ben","Steve","Carl","John","Kevin","muhammad"};
 
+		/*
+		 * Declare and initialise an empty String Array that can hold 10 Strings using instantiation.
+		 */
 		String[] lastNames = new String[10];
 
+		/*
+		 * Assign Values to a String Array by element key reference. 
+		 */
 		lastNames[0] = "Perkins";
 		lastNames[1] = "Smith"; 
 		lastNames[2] = "Jones"; 
@@ -80,9 +117,15 @@ public class Main
 		lastNames[8] = "Jenkins"; 
 		lastNames[9] = "Green";
 		
+		/*
+		 * Add in a carriage return or new line.
+		 */
+		System.out.println(newLine);
+		
+		/*
+		 * Output the 6th name in the lastNames Array using element key reference.
+		 */
 		System.out.println(lastNames[5]);
-
-		int i;
 
 		/*
 		 * Set upper and Lower limits for
@@ -90,9 +133,21 @@ public class Main
 		 */
 		int low = 0;
 		int high = 9;
+		
+		/*
+		 * Declare and initialise an empty Array that can hold 10 Person Objects.
+		 */
 
 		Person[] people = new Person[10];
+		
+		/*
+		 * Declare an int to be used as a counter variable in a for loop, but leave un-initialised.
+		 */
+		int i;
 
+		/*
+		 * This for Loop will execute the code in its body 10 times sequentially and increase the
+		 */
 		for (i = 0; i < 10; i++)
 		{
 
