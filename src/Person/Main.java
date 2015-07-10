@@ -109,7 +109,7 @@ public class Main {
 		/*
 		 * Output the value of the name attribute of the Person object person1.
 		 */
-		System.out.println("person1 name: " + person1.name);
+		System.out.println("person1 name: " + person1.getName());
 
 		/*
 		 * Like Strings Arrays are Objects but can be instantiated in shorthand
